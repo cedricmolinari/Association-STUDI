@@ -1,4 +1,79 @@
 /* réglage mobile */
+.container {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 100px 600px 100px;
+    grid-template-areas:
+            "head head head"
+            "menu menu partenaire"
+            "content content partenaire"
+            "footer footer footer";
+    grid-gap: 10px;
+    background-color: blue;
+
+}
+
+.header {
+    grid-area:head;
+    background-color: aqua;
+}
+
+.menu {
+    grid-area:menu;
+    background-color: yellow;
+
+}
+
+.menu > ul {
+    display: flex;
+
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 25px;
+}
+
+.partenaire {
+    grid-area:partenaire;
+    background-color: brown;
+}
+
+.content {
+    grid-area:content;
+    background-color: green;
+}
+
+.footer {
+    grid-area:footer;
+    background-color: magenta;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "adresse mentions réseaux";
+}
+
+.adresse > p {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.mentions > p {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.adresse {
+    grid-area:adresse;
+    background-color: aquamarine;
+}
+.mentions {
+    grid-area: mentions;
+    background-color: #2e8e6e;
+}
+.réseaux {
+    grid-area: réseaux;
+    background-color: #648177;
+}
+
+
 
 
 /* réglage plus grand que mobile */
