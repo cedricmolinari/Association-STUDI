@@ -15,17 +15,21 @@
     </head>
 
     <body class="container">
-        <div class="row" style="background-color: #c7da8b">
+        <div class="row">
             <div class="col-12">
-                <h2 style="text-align: center">
-                    Asso Lasso ! Attrapez les petits prix au Lasso !
-                    <small class="text-muted">Ici, aucun bénéfice, la solidarité d'abord :)</small>
-                </h2>
+                <div class="jumbotron" style="background-image: url('file:///C:/Users/Utilisateur/Projet Asso_Studi/soleil-couchant.jpg')
+                 ; background-attachment: fixed ; background-position: center ; background-repeat: no-repeat ; background-size: cover">
+                    <h2 style="text-align: center ; background-color: rgba(0,210,255,0.22)">
+    <!--                    <img src="soleil-couchant.jpg" width="100%" height="100%">-->
+                        Asso Lasso ! Attrapez les petits prix au Lasso !
+                        <small class="text-muted">Ici, aucun bénéfice, la solidarité d'abord :)</small>
+                    </h2>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-8" style="background-color: rgba(0,210,255,0.4)">
-                <div class="menu" style="background-color: rgba(0,210,255,0.62)">
+            <div class="col-8">
+                <div class="menu"  style="background-color: #c8c8c8">
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Accueil</a>
@@ -46,17 +50,29 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="container">
+                <div class="container" style="background-color: #ffe583">
                     <div class="row">
-                        <div class="col-12">Liste des articles</div>
+                        <div class="col-12 navbar-expand-sm bg-dark navbar-dark">
+                            <form class="form-inline" action="/action_page.php">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Rechercher">
+                                <button class="btn btn-success" type="submit">Cliquez</button>
+                            </form>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-4">
-                            <p>Table</p>
-                            <img src="table.jpg" alt="table" width=100%>
+                        <div class="col-4 card" style="text-align: center ; width: auto">
+                            <img class="card-img-top">
+                            <div class="card-body" style="background-position: bottom ; background-repeat: no-repeat ;
+                            background-size: contain ; background-image: url('file:///C:/Users/Utilisateur/Projet Asso_Studi/table.jpg')">
+                                <p class="card-title" style="margin-left: 30% ; margin-right: 30%"><a href="#" class="btn btn-primary">Meubles</a></p>
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <p>Armoire</p>
+                        <div class="col-4 card" style="width: auto">
+                            <img class="card-img-top">
+                            <div class="card-body" style="background-position: bottom ; background-repeat: no-repeat ;
+                            background-size: contain ; background-image: url('file:///C:/Users/Utilisateur/Projet Asso_Studi/lavabo.jpg')">
+                                <h5 class="card-title"><a href="#" class="btn btn-primary">Sanitaires</a></h5>
+                            </div>
                         </div>
                         <div class="col-4">
                             <p>Chaises</p>
@@ -90,7 +106,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4" style="background-color: #2e8e6e">
                     <p>Nous situer :</p>
                     <span>
                         <p>
@@ -100,7 +116,7 @@
                         </p>
                     </span>
                 </div>
-                <div class="col-4">
+                <div class="col-4" style="background-color: #16fbef">
                     <p>Mentions légales :</p>
                     <span>
                         <p>
@@ -111,7 +127,7 @@
                         </p>
                     </span>
                 </div>
-                <div class="col-4">
+                <div class="col-4" style="background-color: #95ffe9">
                     <p>Rejoignez nos réseaux :</p>
                     <span>
                         <ul>
