@@ -5,8 +5,8 @@
     grid-template-rows: 200px 100px 600px 100px;
     grid-template-areas:
             "head head head"
-            "menu menu partenaire"
-            "content content partenaire"
+            "menu menu article"
+            "zoomarticle zoomarticle article"
             "footer footer footer";
     grid-gap: 10px;
     background-color: blue;
@@ -32,13 +32,61 @@
     padding: 25px;
 }
 
-.partenaire {
-    grid-area:partenaire;
+.article {
+    grid-area:article;
     background-color: brown;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+            "titrearticle titrearticle titrearticle"
+            "article1 article2 article3"
+            "article4 article5 article6"
+            "article7 article8 article9";
+}
+.titrearticle {
+    grid-area: titrearticle;
+    border: solid magenta;
+}
+.article1 {
+    grid-area: article1;
+    border: solid magenta;
+}
+.article2 {
+    grid-area: article2;
+    border: solid magenta;
+}
+.article3 {
+    grid-area: article3;
+    border: solid magenta;
+}
+.article4 {
+    grid-area: article4;
+    border: solid magenta;
+}
+.article5 {
+    grid-area: article5;
+    border: solid magenta;
+}
+.article6 {
+    grid-area: article6;
+    border: solid magenta;
+}
+/*.article7 {*/
+/*    grid-area: article7;*/
+/*    border: solid magenta;*/
+/*}*/
+.article8 {
+    grid-area: article8;
+    border: solid magenta;
+}
+.article9 {
+    grid-area: article9;
+    border: solid magenta;
 }
 
-.content {
-    grid-area:content;
+.zoomarticle {
+    grid-area:zoomarticle;
     background-color: green;
 }
 
@@ -56,6 +104,11 @@
 }
 
 .mentions > p {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.réseaux > p {
     font-style: italic;
     text-decoration: underline;
 }
