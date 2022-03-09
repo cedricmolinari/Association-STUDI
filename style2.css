@@ -1,0 +1,8 @@
+.exempleClass {
+    width: auto;
+    min-height: 75px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center
+}
